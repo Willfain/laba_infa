@@ -1,1 +1,1 @@
-# laba3_infa
+# laba_infa
