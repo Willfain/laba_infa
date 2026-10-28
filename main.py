@@ -1,17 +1,20 @@
-from math import *
-x = float(input('Введите х '))
-if x > 7.7:
-    y = log(x) * sin(3*x)
-elif x == 7.7:
-    y = (x**5 - 1)**1/5
-else:
-    y = 1 + cos(2*x)**3 - 3*sin(3*x)**2
-print('y =',y)
-#задание 2
-n = int(input('Введите год '))
-if n % 4 == 0 and n % 100 != 0:
-    print('Этот год високосный')
-elif n % 4 == 0 and n % 400 == 0:
-    print('Этот год високосный')
-else:
-    print('Этот год не високосный')
+print('задание 1')
+for i in range(10,21):
+    print(i**2)
+print('задание 2')
+M, m1 = 80, 400
+for m2 in range(100,301,20):
+    print(f'M = {M}, m1 = {m1}, m2 = {m2}, a = {((m2-m1)/(m1 + m2 + M/2))*9.81}')
+#задание 3
+while True:
+    try:
+        N = int(input('Введите целое положительное число N '))
+        s = 1
+        for i in range(3,2*(N-1)+1,2):
+            s += i
+            print('Текущая сумма:',s)
+        print('Квадрат N =',s)
+        break
+    except ValueError:
+        print('Это не целое положительное число, Введите целое положительное число')
+
