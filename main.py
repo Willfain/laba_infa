@@ -9,6 +9,8 @@ print('задание 3')
 while True:
     try:
         N = int(input('Введите целое положительное число N '))
+        if N <= 0:
+            raise ValueError
         s = 0
         for i in range(1,2*(N-1)+2,2):
             s += i
